@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+ /*----- preloader-----*/
+ 
+
+ #preloader_body{
+
+    background-color: black;
+    color: aliceblue;
+    font-family: var(--font_style);
+  
+  
+    height: 90dvh;
+    width: 100dvw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    flex-direction: column;
+  
+    /* overflow: hidden; */
+    
+  }
+  
+  
+  .preloader_image{
+    /* content: url('/assets/img/preloader_imgs/taufic_loading_default_pic.png'); */
+    
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #7ed957;
+  
+    animation: preloader_ani 3s ease infinite;
+  }
+  
+  @keyframes preloader_ani{
+    0%{
+        /* content: url('/tauficaksa_me.png'); */
+        content: url('/assets/preloader_imgs/tauficaksa_me.png');
+        transform: rotate(0deg);
+        width: 330px;
+        height: auto;
+  
+        border-radius: 0;
+        box-shadow: 20px 20px #006f6b
+  
+        /* border-bottom: 2px solid #00aaff; */
+  
+    }
+    50%{
+        /* border-radius: 50%; */
+        /* content: url('/taufic_loading_90rotate_left.png'); */
+        content: url('/assets/preloader_imgs/taufic_loading_90rotate_left.png');
+        transform: rotate(90deg);
+        width: 300px;
+        height: auto;
+  
+        border-radius: 50%;
+        border: 2px solid #7ed957;
+        box-shadow: 0 0 black;
+    }
+    100%{
+  
+        /* content: url('/tauficaksa_me.png'); */
+        content: url('/assets/preloader_imgs/tauficaksa_me.png');
+        transform: rotate(360deg);
+        width: 330px;
+        height: auto;
+  
+        border-radius: 0;
+  
+        box-shadow: 20px 20px #006f6b
+        
+    }
+  }
+  
+  #preloader_footer{
+    height: 10dvh;
+    background-color: black;
+    color: #7ed957;
+    font-family: sans-serif;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  
+  }
+  
+  
+  /*--- end of pre loader */
+  
+  /*--- content of web site --*/
+  #content{
+    display: none; /*---it will  display :block in js */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f7e8; /* Light background for the overall page */
+    color: #333; /* Default text color */
+}
+
+header {
+    background-color: #ffffff; /* White background for the header */
+    padding: 15px 50px; /* Padding for spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center align vertically */
+}
+
+.logo h2 {
+    font-size: 1.5rem; /* Logo font size */
+    color: #2f4833; /* Logo color */
+}
+
+.nav-links {
+    list-style: none; /* No bullet points for list */
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+.nav-links li {
+    margin-left: 25px; /* Spacing between navigation items */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    font-weight: bold; /* Bold text for links */
+}
+
+.auth-buttons {
+    display: flex; /* Flexbox for layout */
+}
+
+.auth-buttons .login-btn {
+    background: linear-gradient(45deg, #a27aff, #72e3e0); /* Gradient background */
+    padding: 8px 20px; /* Padding for button */
+    border-radius: 20px; /* Rounded corners */
+    color: white; /* Button text color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+}
+
+section{
+    display: flex;
+    height: 90dvh;
+}
+
+.index_contentDIv_1{
+    width: 30%;
+    height: 100%;
+    /* background-color: #006f6b; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.index_contentDIv1_elementWrap{
+    width: 90%;
+    height: 100%;
+    /* background-color:#72e3e0; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.index_contentDIv1_elementWrap h1{
+    font-size: 100px;
+}
+
+.buttondiv
+{
+    display: flex;
+    gap: 50px;
+}
+.auth-buttons2
+{
+    display: flex;
+}
+.auth-buttons2 ,login-btn2 {
+    background-color: #1c3f3d; /* Gradient background */
+    padding: 18px 40px; /* Padding for button */
+    border-radius: 20px; /* Rounded corners */
+    color: white; /* Button text color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+}
+
+
+.auth-buttons3
+{
+    display: flex;
+}
+.auth-buttons3 ,login-btn3 {
+    background-color: #e0c356; /* Gradient background */
+    padding: 18px 40px; /* Padding for button */
+    border-radius: 20px; /* Rounded corners */
+    color: white; /* Button text color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+}
+
+section a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.index_contentDIv_2{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index_contentDIv_2 img{
+    width: 400px;
+    height: auto;
+
+    box-shadow: 20px 20px #ff8f50;
+
+}
+
+
+.osa_left{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s ;
+  }
+  
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+
+  .osa_right{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s ;
+  }
+  
+  .show_right{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    /* background-color: #006f6b; */
+  }
+  
+
+  
