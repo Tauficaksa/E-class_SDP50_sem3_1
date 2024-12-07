@@ -35,10 +35,17 @@ public class UserController {
         return U_Service.userlogin(loginRequest.getEmailId(), loginRequest.getPwd());
     }
 
-    @PutMapping("updateuserbyID")
+    @PutMapping("/updateuserbyID")
     public void updateuserbyID(@RequestBody User user)
     {
         U_Service.updateuserbyID(user.getId(),user.isStatus());
     }
+
+    @PutMapping("/updatepwduserbyID")
+    public void updatepwduserbyID(@RequestBody User user)
+    {
+        U_Service.updatepwduserbyID(user.getId(),user.getPwd());
+    }
+
 
 }
