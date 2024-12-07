@@ -32,8 +32,11 @@ public class UserService {
         User user = U_Repo.findByEmailIdAndPwd(email,pwd);
         if (user == null) {
             return "failure";
-        } else {
-            return "Login Successful!";
+        } else if( !user.isStatus()){
+            return "user block";
+        }
+        else {
+            return  "Login Successful!";
         }
     }
 

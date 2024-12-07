@@ -41,9 +41,9 @@ function loginUser(event) {
     })
     .then(response => response.text()) // Process the response as plain text
     .then(result => {
-        if (result === "Admin Login Successful!") {
-            alert("Admin Login Successful!");
-            window.location.href = "/admin/dashboard"; // Redirect to admin dashboard
+        if (result === "user block") {
+            alert("you are BLOCKED by admin");
+            
         } else if (result === "Login Successful!") {
             alert("User Login Successful!");
             window.location.href = "/src/userfiles/userdashboard.html"; // Redirect to user dashboard
