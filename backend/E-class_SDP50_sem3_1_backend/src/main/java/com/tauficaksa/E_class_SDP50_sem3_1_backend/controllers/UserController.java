@@ -36,9 +36,9 @@ public class UserController {
     }
 
     @PutMapping("updateuserbyID")
-    public void updateuserbyID(@RequestPart int id ,@RequestPart boolean status)
+    public void updateuserbyID(@RequestBody User user)
     {
-        U_Service.updateuserbyID(id,status);
+        U_Service.updateuserbyID(user.getId(),user.isStatus());
     }
 
 }
