@@ -37,4 +37,10 @@ public class UserService {
         }
     }
 
+    public void updateuserbyID(int id, Boolean status) {
+        User user = U_Repo.findById(id).orElse(new User());
+
+        user.setStatus((status));
+        U_Repo.save(user);
+    }
 }
