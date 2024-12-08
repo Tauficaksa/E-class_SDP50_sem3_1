@@ -34,7 +34,7 @@ public class User {
     }
 
     /* Getters and Setters */
-    public Long getId() {
+    public Iterable<Integer> getId() {
         return id;
     }
 

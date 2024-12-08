@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f7e8; /* Light background for the overall page */
+    color: #333; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100dvh;
+
+}
+
+h1{
+    animation: bufferani .5s linear 2s infinite alternate;}
+
+@keyframes bufferani {
+    from{
+        opacity: .2;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    background-color: #00aab5;
+    font-size: large;
+}
+
+button:hover{
+    opacity: .5;
+}
